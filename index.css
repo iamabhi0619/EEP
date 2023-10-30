@@ -1,0 +1,68 @@
+body {
+	background: linear-gradient(-45deg, #0b666a, #35a29f, #97feed);
+	background-size: 300% 300%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.4s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+@font-face {
+    font-family: 'ico'; /* You can give it any name you like */
+    /* src: url('/EEP/resources/MagicFloristDemoRegular.ttf') format('ttf'); */
+    src: url('/EEP/resources/MagicFloristDemoRegular_1.otf') format('otf');
+
+}
