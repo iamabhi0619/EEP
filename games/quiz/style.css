@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Playpen;
+    src: url(/EEP/games/quiz/font/Playpen.ttf);
+}
+*{
+    margin: 0;
+    font-family: 'Playpen', sans-serif;
+}
+body {
+	background: linear-gradient(-45deg, #0b666a, #35a29f);
+	background-size: 300% 300%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+    font-family: 'Playpen';
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#app{
+    background-color: aliceblue;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+#app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+#quiz{
+    padding: 20px 0;
+}
+#question h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background: #222;
+    color: #fff;
+}
+#btn-next{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}

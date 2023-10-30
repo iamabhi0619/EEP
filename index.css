@@ -1,8 +1,13 @@
+@font-face{
+    font-family: Playpen;
+    src: url(/EEP/resources/Playpen.ttf);
+}
 body {
-	background: linear-gradient(-45deg, #0b666a, #35a29f, #97feed);
+	background: linear-gradient(-45deg, #0b666a, #35a29f);
 	background-size: 300% 300%;
 	animation: gradient 25s ease infinite;
 	height: 100vh;
+    font-family: 'Playpen';
 }
 @keyframes gradient {
 	0% {
@@ -60,9 +65,22 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 50%;
 }
-@font-face {
-    font-family: 'ico'; /* You can give it any name you like */
-    /* src: url('/EEP/resources/MagicFloristDemoRegular.ttf') format('ttf'); */
-    src: url('/EEP/resources/MagicFloristDemoRegular_1.otf') format('otf');
 
+#tab{
+    margin: 10px auto;
+    margin: 50px auto auto 0;
+}
+#tile{
+    display: inline-block;
+    text-align: center;
+    background-color: #6fc276;
+    border-radius: 30px;
+    padding: 20px;
+    width: 150px;
+    color: #fff;
+    margin: 20px;
+}
+#tile-title{
+    font-size: 21px;
+    font-weight: 500;
 }

@@ -1,2 +1,0 @@
-# EEP
-Enviroment Education Pletform
