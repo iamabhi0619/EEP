@@ -1,0 +1,108 @@
+@font-face{
+    font-family: Playpen;
+    src: url(/EEP/resources/Playpen.ttf);
+}
+body {
+	background: linear-gradient(-45deg, #0b666a, #35a29f);
+	background-size: 300% 300%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+    font-family: 'Playpen';
+    color: #fff;
+    background-position: fixed;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.4s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+#videos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 10px 20px 10px ;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+#videos video{
+    height: 380px;
+    border-radius: 10px;
+}
+#text{
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+#text h1{
+    font-size: 50px;
+    margin: 0;
+}
+#text p{
+    font-size: 23px;
+    margin: 5px;
+}
+#contain{
+    margin: 20px;
+}
+#contain h1{
+    text-align: center;
+    font-size: 70px;
+    margin: 10px;
+}
+#contain p{
+   font-size: 30px; 
+}
+#contain ul{
+    font-size: 30px;
+}
