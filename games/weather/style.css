@@ -130,6 +130,9 @@ nav ul li a:hover::after{
     align-items: center;
     text-align: left;
 }
+.col p{
+    margin: 1px;
+}
 .col img{
     width: 40px;
     margin-right: 10px;
