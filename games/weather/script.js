@@ -7,7 +7,7 @@ const weatherIcon = document.querySelector(".weather-icon")
 async function checkWeather(city){
     var response1 = await fetch(apiUrl + city +`&appid=${apiKey}`);
     var Data1 = await response1.json();
-    var baseUrl = "http://api.openweathermap.org/data/2.5/air_pollution/forecast";
+    var baseUrl = "https://api.openweathermap.org/data/2.5/air_pollution/forecast";
     const latitude = Data1.coord.lat; // Replace with the desired latitude
     const longitude = Data1.coord.lon; // Replace with the desired longitude
     var response2 = await fetch(`${baseUrl}?lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
