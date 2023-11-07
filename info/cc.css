@@ -10,6 +10,7 @@ body {
     font-family: 'Playpen';
     color: #fff;
     background-position: fixed;
+    background-attachment: fixed;
 }
 @keyframes gradient {
 	0% {
