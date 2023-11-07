@@ -32,10 +32,6 @@ nav{
     width: 120px;
     cursor: pointer;
 }
-.cart-icon{
-    width: 50px;
-    cursor: pointer;
-}
 nav ul{
     flex: 1;
     text-align: right;
