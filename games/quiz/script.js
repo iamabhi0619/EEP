@@ -7,22 +7,74 @@ let score = 0;
 
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Paris", "London", "Berlin", "Madrid"],
-        correctAnswer: "Paris",
-        feedback: "Paris is the correct answer. It's the capital of France."
+        //1
+        question: "Which of these materials cannot be recycled?",
+        options: ["Metals", "Plastic Bottles", "Paper and Cardboard", "Light Bulbs"],
+        correctAnswer: "Light Bulbs",
+        feedback: "Because we can't separate the materials that make a light bulb, we cannot recycle them. In addition, some light bulbs contain mercury a heavy (dangerous) metal"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Earth", "Venus", "Mars", "Jupiter"],
-        correctAnswer: "Mars",
-        feedback: "Mars is the Red Planet. That's the right answer."
+        //2
+        question: "Which of these is a renewable energy resource?",
+        options: ["Coal", "Nuclear Enegy", "Natural Gas", "Wind Energy"],
+        correctAnswer: "Wind Energy",
+        feedback: "Renewable energy sources are those abundant and continually renovating in nature, like the wind!"
     },
     {
-        question: "What is the largest mammal in the world?",
-        options: ["Elephant", "Giraffe", "Blue Whale", "Lion"],
-        correctAnswer: "Blue Whale",
-        feedback: "You got it right! The Blue Whale is the largest mammal."
+        //3
+        question: "Which of the following will help you to save water?",
+        options: ["Close taps properly", "Flush the toilet 3 times", "Take Long showers", "Leaave the faucet on while you brush your teeth"],
+        correctAnswer: "Close taps properly",
+        feedback: "We must make sure there are no leakages in our houses and use as little water as possible: flush only once, take shorter showers, and close the faucet when brushing your teeth!"
+    },
+    {
+        //4
+        question: "Which is the most eco-friendly mode of transportation?",
+        options: ["Cycle", "Bus", "Motorcycle", "Car"],
+        correctAnswer: "Cycle",
+        feedback: "Instead of burning fossil fuels that pollute and heat our planet, when we cycle we are only burning calories."
+    },
+    {
+        //5
+        question: "Which day is Earth Day?",
+        options: ["March 12", "October 2", "April 22", "May 9"],
+        correctAnswer: "April 22",
+        feedback: "The Earth Day is a day to remind us of the importance of adopting more eco-friendly lifestyles. Although it is celebrated on April 22nd, Earth Day is actually everyday!"
+    },
+    {
+        //6
+        question: "Which of the following is a greenhouse gas?",
+        options: ["CO2", "CH4", "N2O", "All of the above"],
+        correctAnswer: "All of the above",
+        feedback: "All of these gases trap the Sun’s heat in the atmosphere! And increase the temprature of Earth"
+    },
+    {
+        //7
+        question: "Which of these countries emits the most carbon dioxide?",
+        options: ["China", "Russia", "USA", "Australia"],
+        correctAnswer: "China",
+        feedback: "As China is growing fast and burns a lot of coal (a fossil fuel), it produces loads of carbon dioxide."
+    },
+    {
+        //8
+        question: "How long does a Styrofoam cup take to decompose?",
+        options: ["50 years", "100 years", "300 years", "500 years"],
+        correctAnswer: "500 years",
+        feedback: "Nature cannot degrade Styrofoam quickly and we cannot recycle this material! It is always better to refuse Styrofoam cups!"
+    },
+    {
+        //9
+        question: "What is the most common type of trash that litters our oceans?",
+        options: ["Cigarettes", "Plastic Bags", "Beverage plastic bottles", "Straws/Stirrers"],
+        correctAnswer: "Cigarettes",
+        feedback: "Humans throw a lot of cigarettes everywhere and these end up in the ocean. In any case, there are loads of plastic bags and bottles, straws, and stirrers in the ocean as well!"
+    },
+    {
+        //10
+        question: "How long does it take for a glass bottle or jar to decompose?",
+        options: ["100 years", "4,000 years", "10,000 years", "40,000 years"],
+        correctAnswer: "40,000 years",
+        feedback: "A glass bottle will take 40 centuries to decompose if it isn’t recycled. Recycling a single glass bottle or jar will save enough energy to power a light bulb for four hours."
     },
 ];
 

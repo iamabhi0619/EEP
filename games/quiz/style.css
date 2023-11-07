@@ -1,17 +1,67 @@
-@font-face {
+@font-face{
     font-family: Playpen;
-    src: url(/EEP/games/quiz/font/Playpen.ttf);
-}
-*{
-    margin: 0;
-    font-family: 'Playpen', sans-serif;
+    src: url(/EEP/resources/Playpen.ttf);
 }
 body {
 	background: linear-gradient(-45deg, #0b666a, #35a29f);
 	background-size: 300% 300%;
 	animation: gradient 25s ease infinite;
 	height: 100vh;
+    background-attachment: fixed;
     font-family: 'Playpen';
+    transition: all ease 0.5s;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.4s;
+}
+nav ul li a:hover::after{
+    width: 50%;
 }
 @keyframes gradient {
 	0% {
@@ -25,33 +75,38 @@ body {
 	}
 }
 #app{
-    background-color: aliceblue;
+    background: linear-gradient(145deg, #382bf0, #5e43f3);
+    box-shadow: 0 0 15px #fff;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
+    margin-top: 10px;
     border-radius: 10px;
     padding: 30px;
 }
 #app h1{
     font-size: 25px;
-    color: #001e4d;
+    color: #fff;
     font-weight: 600;
     border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
 }
 #quiz{
-    padding: 20px 0;
+    padding: 5px 0;
 }
 #question h2{
     font-size: 18px;
-    color: #001e4d;
+    color: #fff;
     font-weight: 600;
+    margin-top: 2px;
 }
 .btn{
     background-color: #fff;
     color: #222;
     font-weight: 500;
     width: 100%;
+    font-size: 20px;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
@@ -61,18 +116,26 @@ body {
     transition: all 0.5s;
 }
 .btn:hover{
-    background: #222;
-    color: #fff;
+    scale: 1.085;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
 }
 #btn-next{
-    background: #001e4d;
-    color: #fff;
+    background: #fff;
+    color: #000;
     font-weight: 500;
     width: 150px;
+    font-size: 20px;
     border: 0;
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
     display: none;
+    transition: all 0.5s;
+}
+#btn-next:hover{
+    scale: 1.08;
+    background-color: #ffd7b5;
+    color: #000080;
 }
